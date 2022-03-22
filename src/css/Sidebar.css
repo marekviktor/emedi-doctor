@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    align-items: stretch;
+}
+
+.sidebar{
+    background-color: darkgreen;
+    width: 20%;
+}
+
+.outlet{
+    background-color: aliceblue;
+    width: 100%;
+}
+
+#avatar{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
