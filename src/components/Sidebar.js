@@ -77,6 +77,14 @@ export default function Sidebar() {
                         </ListItemIcon>
                         <ListItemText primary={t('Patients')}/>
                     </ListItem>
+                    <ListItem style={{backgroundColor: '#DD61A7'}} onClick={() => {
+                        navigate('/medicaments')
+                    }} button key={'Medicaments'}>
+                        <ListItemIcon>
+                            <PeopleAltRoundedIcon/>
+                        </ListItemIcon>
+                        <ListItemText primary={'Medicaments'}/>
+                    </ListItem>
                     <ListItemButton style={{backgroundColor: '#DD61A7'}} onClick={()=>{setOpen(!open)}}>
                         <ListItemIcon>
                             <PeopleAltRoundedIcon />

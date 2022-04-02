@@ -1,0 +1,39 @@
+.container{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 13.5em;
+    aspect-ratio: 1;
+    border-radius: 1.5em;
+    padding: 0.5em;
+    margin: 2em;
+    box-shadow: 0 0 9px 6px rgba(255,143,232,0.16)
+}
+
+.avatar{
+    margin: 0.1em;
+    width: 3.5em;
+    height: 3.5em;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    box-shadow:0 0 0 6px #FF8FE8
+}
+
+.surName{
+    color: #000000;
+    margin: 0.1em;
+    font-family: ProductSansBold, serif;
+}
+
+.forName{
+    color: #000000;
+    margin: 0.1em;
+    font-family: ProductSansRegular, serif;
+}
+
+.year{
+    color: #000000;
+    margin: 0.1em;
+    font-family: ProductSansRegular, serif;
+}

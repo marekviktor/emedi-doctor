@@ -1,0 +1,7 @@
+.BloodTypeContainer{
+    width: 4em;
+    border-radius: 1.5em;
+    aspect-ratio: 1;
+    margin: 2em;
+    box-shadow: 0 0 9px 6px rgba(255,143,232,0.16)
+}

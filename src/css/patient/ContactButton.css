@@ -1,0 +1,31 @@
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:  rgba(255,143,232);
+    width: 13.5em;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin: 2em;
+    box-shadow: 0 0 9px 6px rgba(255, 143, 232, 0.44);
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.text{
+    color: #000000;
+    margin: 0.1em;
+    font-family: ProductSansRegular, serif;
+}
+
+.chatImg{
+    margin-right: 0.5em;
+    width: 2em;
+    aspect-ratio: 1;
+}

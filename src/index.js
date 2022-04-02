@@ -15,10 +15,9 @@ import {
     ApolloClient,
     InMemoryCache,
     ApolloProvider,
-    useQuery,
-    gql
 } from "@apollo/client";
-import i18n from "./i18n";
+import Medicaments from "./screens/Medicaments";
+import Patient from "./screens/Patient";
 
 const client = new ApolloClient({
     uri: "http://localhost:8080/graphql",
@@ -37,15 +36,15 @@ ReactDOM.render(
                         <Route path="/stats" element={<Stats/>}/>
                         <Route path="/account" element={<Account/>}/>
                         <Route path="/patients" element={<Patients/>}/>
-                        <Route path="/patients/:id" element={<Patients/>}/>
+                        <Route path="/medicaments" element={<Medicaments/>}/>
+                        <Route path="/patient/:id" element={<Patient/>}/>
                         <Route path="/settings" element={<Settings/>}/>
-                        {/*<Route path='/order/:flavour' element={<Popup/>}/>*/}
                     </Route>
                 </Routes>
             </BrowserRouter>
         </ApolloProvider>
     </React.StrictMode>,
-  document.getElementById('root')
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

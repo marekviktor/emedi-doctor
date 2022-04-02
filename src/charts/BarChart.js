@@ -1,12 +1,12 @@
 import React from "react";
 import {BarElement, CategoryScale, Chart as ChartJS, Legend, LinearScale, Title, Tooltip} from "chart.js";
-import { Bar } from 'react-chartjs-2';
+import { Chart } from 'react-chartjs-2';
 import faker from '@faker-js/faker';
 import {useTranslation} from "react-i18next";
 
 export default function BarChart() {
 
-    const{t,i18n} = useTranslation()
+    const{t} = useTranslation()
 
     ChartJS.register(
         CategoryScale,
@@ -49,7 +49,7 @@ export default function BarChart() {
     };
     return (
         <div className="BarChart">
-            <Bar options={options} data={data} />
+            <Chart options={options} data={data}  type={'bar'}/>
         </div>
     );
 }
